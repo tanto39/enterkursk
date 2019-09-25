@@ -1,0 +1,693 @@
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1.8;
+}
+/*--fonts.css---*/
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	font: 16px RobotoRegular, Arial, serif;
+	width: 100%;
+	color: #000000;
+	background: url(../images/page.png) 0 400px repeat;
+}
+img {border: none;}
+ul{list-style: none;}
+input {
+	vertical-align: middle;
+	height: 23px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+.middle, .center-header, .footer-center{
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*-----jivo site-----*/
+.wrap_3s{margin: 5% 3% !important;}
+
+/*---------menu----------*/
+.topmenu{
+	width: 1125px;
+	height: 64px;
+	margin: 0px auto;
+}
+.topmenu li{
+	display: block;
+	float: left;
+}
+.topmenu a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: block;
+	padding: 18px 46px;
+	text-align: center;
+	border-left: 1px solid #3bd63e;
+}
+.topmenu a, .leftmenu a{
+	-moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.service-desc, .portfolio div a:after{
+	-moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.topmenu a, .topmenu li, .footer, .scroll{
+	background: #3bd63e; /* Old browsers */
+background: -moz-linear-gradient(top, #3bd63e 0%, #00c201 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3bd63e), color-stop(100%,#00c201)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #3bd63e 0%,#00c201 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #3bd63e 0%,#00c201 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #3bd63e 0%,#00c201 100%); /* IE10+ */
+background: linear-gradient(to bottom, #3bd63e 0%,#00c201 100%); /* W3C */
+}
+.topmenu li:first-of-type a{border-left: none;}
+.topmenu a:hover, .topmenu li.active a{background: #3bd63e;}
+.leftmenu, .content, .calc>div, .message-form, .portfolio{
+	position: relative;
+	border-radius: 10px;
+	border: 1px solid #0c0;
+	border: 1px solid #BABABA;
+	-webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+	overflow: hidden;
+}
+.leftmenu h3, .left-title{
+	padding: 13px 20px 10px 24px;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 1px dashed #AFAFAF;
+	text-align: center;
+}
+h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .portfolio a, .bannerCalc a{color: #006400;}
+.leftmenu a{
+	padding: 8px 10px 8px 43px;
+	width: 195px;
+	display: block;
+	margin: 0px;
+	background: url(../images/strel.png) 13px 12px no-repeat;
+	text-decoration: none;
+}
+.leftmenu a:hover, .leftmenu li.active a{background-color: #F0F8FF;}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {height: 415px;}
+.header, .boxcontent, .leftmenu, .content{background: #CCFFCC;}
+.center-header{position: relative;}
+.top-box{
+	width: 650px;
+	height: 220px;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+}
+.top-box a{
+	display: block;
+	position: relative;
+	background: url(../images/topbox.jpg) top left no-repeat;
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 6px;
+	-moz-transition: -moz-transform 0.5s ease-in-out;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	-o-transition: -o-transform 0.5s ease-in-out;
+	-ms-transition: -ms-transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+	-webkit-border-radius: 105px;
+	-moz-border-radius: 105px;
+	border-radius: 105px;
+}
+.top-box a span{display: none;}
+.top-box a:hover{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.top-box a.top-box2{background-position: -200px 0px;}
+.top-box a.top-box3{background-position: -400px 0px;}
+.top-box a.top-box1:hover{background-position: 0px -200px;}
+.top-box a.top-box2:hover{background-position: -200px -200px;}
+.top-box a.top-box3:hover{background-position: -400px -200px;}
+.logo {
+width: 540px;
+margin: 0 auto;
+top: 30px;
+position: relative;
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	position: relative;
+	margin: 20px auto;
+	min-height: 1000px;
+	width: 95%;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.content {margin: 0 0 0 270px;}
+.content a {color: #006633;}
+.bottom-content{height: 60px;}
+.content p{padding: 20px 80px;}
+.content ul{padding: 10px 80px;}
+.content li{
+	padding: 10px 0 10px 30px;
+	background: url(../images/finger.png) 0 13px no-repeat;
+}
+.boxcontent{padding: 0 0 30px 0; background: #effafd;}
+h1{font-size: 1.5em;text-transform: uppercase;}
+
+/*-- portfolio --*/
+.portfolio{
+	width: 600px;
+	margin: 10px auto;
+	background: #ADD8E6;
+}
+.portfolio p{
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0;
+}
+.portfolio div a{display: block;}
+.portfolio p:nth-of-type(1){padding: 20px 20px 0 20px;}
+.portfolio div{margin: 30px auto; width: 507px; position: relative;}
+.portfolio div a:after{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    content: "Перейти на сайт";
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+.portfolio div a:hover:after{
+	opacity: 0.7;
+	line-height: 7.4;
+}
+td{padding:10px;border:1px solid #111111;background: #ADD8E6;}
+table tr:nth-of-type(1) td{background: #8FBC8F;}
+table{margin: 0 auto;}
+.tablica td{border: none;background: none;}
+.uslugi{text-align: center;}
+.form-validate{padding: 0 60px;}
+.b2{display: none;} 
+h2, h3{font-size: 1.4em;}
+h1, h2, h3{padding: 20px 0 0; text-align: center; font-weight: normal;}
+.content h1, h2, h3{border-bottom: 1px solid #90b990; margin: 0 70px;}
+.leftimg, .rightimg, .centerimg{display: block; margin: 10px 20px; border-radius: 10px;}
+.leftimg{float: left;}
+.rightimg{float: right;}
+.centerimg{margin: 30px auto;position: relative;}
+
+/*-----mycalculator-----*/
+.calc, .calc-wrap{text-align: center;}
+.calc p{text-align: center;}
+.calc div{
+	clear: both;
+	overflow: hidden;
+}
+.calc-subtitle{
+	margin: 10px 80px;
+	padding: 20px;
+	background:#8FBC8F;
+}
+.calc label{float: left;}
+.calc input{float: right;}
+.radio-calc-wrap, .checkbox-calk-wrap, .num-calc-wrap, .summa, .message-form{
+	width: 420px;
+	margin: 10px auto;
+	padding: 20px;
+	background:#ADD8E6;
+}
+.num-calc-wrap input{width: 100px;}
+.summa {width: 200px; font-size: 1.6em;}
+.summa input {width: 80px; height: 30px; font-size: 16px; float: none; padding: 5px;}
+
+.button_calc_save{
+	padding: 10px 20px;
+    font-size: 1.2em;
+    background: #5b94a7;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+	display: block;
+    margin: 0 auto;
+}
+.button_calc_save:hover{
+	background: #487686;
+}
+.calc_result{
+	text-align: center;
+	padding: 20px;
+}
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	width: 250px;
+	position: absolute;
+	top:0px;
+}
+.bannerCalc{
+	position: relative;
+    height: 165px;
+    width: 205px;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #90c190;
+    background: #bdffb5;
+    border-radius: 20px;
+}
+.bannerCalc:hover, #vk_groups:hover{
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+}
+.bannerCalc a{text-decoration: none; text-transform: uppercase; display: block; padding: 25px 0;}
+#info{
+	height: 310px;
+	margin: 20px auto;
+	width: 215px;
+	background:url(../images/info.png) no-repeat;
+}
+#beget{
+	padding: 150px 0 40px 0;
+	text-align: center;
+}
+#beget img{margin-top:10px;}
+#vk_groups{margin: 30px auto; width: 205px; border: 2px solid #a6d0a3; border-radius: 20px; overflow: hidden;}
+/*------------MyForm----------------*/
+.form-zakaz{
+	width: 500px;
+	margin: 20px auto;
+}
+.form-zakaz label{
+	display: block;
+	width: 150px;
+	margin-right: 20px;
+}
+.form-zakaz input{width:200px; padding: 5px;}
+.form-zakaz input, .form-zakaz textarea{border: 1px solid #90b990; outline: none;}
+.form-input{
+	margin:5px;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	flex-basis: 50%;
+}
+.form-massage{
+	width: 250px;
+}
+.form-massage-wrap {
+	align-items: flex-start;
+	margin-top: 10px;
+}
+#form-capcha{width:30px;}
+.form-zakaz .form-submit{
+	display: block;
+    width: 170px;
+    margin: 0 0 0 95px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #56b6ec;
+    border: none;
+    color: #ffffff;
+}
+.form-submit:hover{
+	background: #8ab78e;
+    color: #ffffff;
+}
+.form-pd {
+	margin-top: 20px;
+}
+input#form-pd {
+	width: 20px;
+}
+.form-pd label {
+	font-size: 0.8em;
+}
+.message-form{display: none; text-align: center;}
+.content .message-form p{padding: 0;}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {}
+.footer-center{
+	position: relative;	
+	padding: 20px;
+}
+.contact{
+	color: #ffffff;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.metrika{
+	position: absolute;
+	top: 20px;
+	right: 30px;	
+}
+/*------socbuttons------*/
+.socbuttons{
+	position: fixed;
+	right: 10px;
+	top: 100px;
+	z-index: 40;
+}
+.socbuttons a{
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-top: 3px;
+	background:url(../images/soc.png);
+}
+.socbuttons a:hover{right: 3px; position: relative;}
+.vk a{background-position: 32px;}
+.twitter a{background-position: 64px;}
+.mail a{background-position: 128px;}
+.google a{background-position: 160px;}
+.odnoclassniki a{background-position: 96px;}
+
+/*-----services-----*/
+.service-wrap {
+	padding: 20px 80px;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	align-items: flex-start;
+}
+.service {
+	flex-basis: 50%;
+    border: 3px solid #9cc19c;
+    border-radius: 20px;
+    margin: 10px;
+    background: #effafd;
+    color: #025d2f;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+.service svg {
+	display: block;
+	margin: 0 auto;
+}
+.service span {
+	display: block;
+    font-size: 1.6em;
+}
+.service p {
+	padding: 20px;
+	text-align: left;
+}
+.service-title {
+	padding: 20px 20px 0 20px;
+	font-size: 1.5em;
+}
+.service-readmore {
+	padding: 10px 20px 10px 20px;
+    background: #44a775;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+.service-desc {
+	height: 0;
+	overflow: hidden;
+}
+.service:hover .service-desc {
+	height: 550px;
+}
+
+
+/*---up---*/
+.scroll{
+	position: fixed;
+	bottom: 50px;
+	left: 10px;
+	padding: 10px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.scroll{
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+}
+/*------------------Adaptation--------------------*/
+@media all and (max-width:1240px) {
+	.topmenu li a {padding: 18px 40px;}
+	.topmenu {width: 1055px;}
+}
+
+@media all and (max-width:1100px) {
+	.topmenu li a {padding: 18px 30px;}
+	.topmenu {width: 930px;}
+	.service p {
+		font-size: 0.9em;
+	}
+}
+@media all and (max-width:980px) {
+	.topmenu li a {padding: 18px 20px;}
+	.topmenu {width: 825px;}
+	
+	.form-zakaz, .form-zakaz input, .form-massage{
+		width: auto;
+	}
+	.form-input{
+		flex-direction: column;
+	}
+	.form-massage-wrap{
+		align-items: center;
+	}
+	.service-wrap {
+		flex-direction: column;
+	}
+}
+@media all and (max-width:768px) {
+	.service-wrap {
+		flex-direction: column;
+		padding: 0;
+	}
+}
+
+@media all and (orientation: portrait) and (max-width:700px){
+	
+body {
+	width: 100%;
+	background: none;
+}
+.logo {
+    width: 90%;
+    top: 0;
+}
+.leftimg, .rightimg, .centerimg {
+    margin: 10px auto;
+	float: none;
+}
+.portfolio {width: 100%;}
+.form-validate {padding: 0 5px 0 0;}
+.text {padding: 5px 10px 5px 0;}
+.tablica img{width: 30%;}
+.wrapper{width: 100%;}
+.scroll{
+	display: none;
+	visibility: hidden;
+}
+img {max-width: 100%;}
+.top-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    top: 0;
+    position: relative;
+}
+.top-box  a{
+    float: none;
+	margin: 5px auto;
+}
+.topmenu{
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+.topmenu li{float: none;}
+.header {height: 100%;}
+.middle, .center-header, .footer-center {
+    min-width: 0;
+    max-width: 100%;
+}
+.middle {
+	position: relative;
+	margin: 20px auto;
+	min-height: auto;
+	width: 100%;
+}
+h1, h2, h3{margin: 0 10px !important; padding: 20px 0 0 0; text-align: center;}
+.content p {padding: 20px;}
+.content {
+	position: relative;
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 0px;
+}
+.content ul {padding: 10px;}
+.left-sidebar {
+    position: relative;
+	left: 0;
+	width: 100%;
+	margin: 0;
+}
+.copyright{
+    float: none;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+.socbuttons{
+	position: relative;
+	left: 0px;
+	bottom: 0px;
+}
+.socbuttons a{
+	display: block;
+	float: left;
+}
+.form-zakaz label {float: none;}
+.contact {margin: 5px;}
+.form-zakaz .form-submit{display: inline; margin: 0;}
+.metrika{display: none; left: 0;}
+.radio-calc-wrap, .checkbox-calk-wrap, .num-calc-wrap, .summa, .calc-subtitle {width: 80%;}
+.calc-subtitle{margin: 0 auto;}
+.portfolio div{max-width: 100%;}
+}
+
+@media all and (orientation: landscape) and (max-width:700px){	
+body {
+	width: 100%;
+	background: none;
+}
+.logo {
+    width: 90%;
+    top: 0;
+}
+.leftimg, .rightimg, .centerimg {
+    margin: 10px auto;
+	float: none;
+}
+.portfolio {width: 100%;}
+.form-validate {padding: 0 5px 0 0;}
+.text {
+    padding: 5px 10px 5px 0;
+}
+.tablica img{width: 30%;}
+.wrapper{width: 100%;}
+.scroll{
+	display: none;
+	visibility: hidden;
+}
+img {max-width: 100%;}
+.top-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    top: 0;
+    position: relative;
+}
+.top-box  a{
+    float: none;
+	margin: 5px auto;
+}
+.topmenu{
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+.topmenu li{float: none;}
+.header {height: 100%;}
+.middle, .center-header, .footer-center {
+    min-width: 0;
+    max-width: 100%;
+}
+.middle {
+	position: relative;
+	margin: 20px auto;
+	min-height: auto;
+	width: 100%;
+}
+h1, h2, h3{margin: 0 10px !important; padding: 20px 0 0 0; text-align: center;}
+.content p {padding: 20px;}
+.content {
+	position: relative;
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 0px;
+}
+.content ul {
+    padding: 10px;
+}
+.left-sidebar {
+    position: relative;
+	left: 0;
+	width: 100%;
+	margin: 0;
+}
+.copyright{
+    float: none;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+.socbuttons{
+	position: relative;
+	left: 0px;
+	bottom: 0px;
+}
+.socbuttons a{
+	display: block;
+	float: left;
+}
+.form-zakaz label {float: none;}
+.contact {margin: 5px;}
+.form-zakaz .form-submit{display: inline; margin: 0;}
+.metrika{display: none; left: 0;}
+.radio-calc-wrap, .checkbox-calk-wrap, .num-calc-wrap, .summa, .calc-subtitle {width: 80%;}
+.calc-subtitle{margin: 0 auto;}
+.portfolio div{max-width: 100%;}
+}
+
+

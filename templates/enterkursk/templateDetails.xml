@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site">
+<name>Enterkursk</name>
+<creationDate>3.11.2014</creationDate>
+<author>Gutnev Andrey</author>
+<authorEmail>tanto39@mail.ru</authorEmail>
+<authorUrl>enterkursk.ru</authorUrl>
+<copyright>Copyright 2014</copyright>
+<license>GNU General Public License</license>
+<version>3.0.0</version>
+<description> Special for enterkursk.ru.</description>
+
+<files>
+<folder>css</folder>
+<folder>images</folder>
+<folder>js</folder>
+<filename>index.php</filename>
+<filename>template_thumbnail.png</filename>
+<filename>template_preview.png</filename>
+<filename>templateDetails.xml</filename>
+</files>
+
+<positions>
+<position>left</position>
+<position>topmenu</position>
+</positions>
+</extension>
