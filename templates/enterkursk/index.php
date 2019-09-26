@@ -89,9 +89,7 @@ unset($this->_generator);
 				<?php endif;?>
             </div>
             
-            <div class="logo">
-				<img src="images/enterkursk-logo.png" alt="EnterKursk" title="EnterKursk"/>
-			</div>
+            <div class="logo"><div class="logo-wrap">8(920)721-33-46</div></div>
         </div>
         
 	</header><!-- .header-->
