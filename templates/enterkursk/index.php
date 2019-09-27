@@ -62,13 +62,13 @@ unset($this->_generator);
 
 <div class="wrapper">
 
+    <nav class="topmenu flex">
+        <jdoc:include type="modules" name="topmenu"/>
+    </nav>
+
 	<header class="header">
 		<div class="center-header">
-        	
-        	<nav class="topmenu">
-                <jdoc:include type="modules" name="topmenu"/>
-			</nav>
-            
+
             <div class="top-box">
 				<?php if ($uri != "/protsess-sozdaniya-sajta"):?>
 					<a class="top-box1" href="/protsess-sozdaniya-sajta"><span>Создание сайта</span></a>
@@ -94,34 +94,42 @@ unset($this->_generator);
         
 	</header><!-- .header-->
 
-	<div class="middle">
+	<div class="middle flex">
 
 		
 			<main class="content">
 			<jdoc:include type="component" />
 
+                <div class="form-wrap">
+                <h3 class="center-title form-title">Форма заказа</h3>
+                    <div class="flex form-cat">
+                        <div class="cat">
+                            <img src="/landing/images/kot.png" alt="Создание сайта" title="Создание сайта">
+                            <div class="cat-title">Не огорчай котика, закажи сайт!</div>
+                        </div>
+                        <div class="form-zakaz"><form action="mail.php" method="post">
+                                <div class="form-input"><label>Ваше имя:</label><input class="form-name" type="text" placeholder="Введите имя" required="" name="name" size="16" /></div>
+                                <div class="form-input"><label>Ваш телефон:</label><input class="form-phone" type="tel" placeholder="8**********" required="" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" name="phone" size="16" /></div>
+                                <div class="form-input"><label>Ваш e-mail:</label><input class="form-mail" type="email" placeholder="email@email" required="" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" size="16" /></div>
+                                <div class="form-input form-massage-wrap"><label>Сообщение:</label><textarea name="mess" class="form-massage" cols="23" rows="8"></textarea></div>
+                                <div class="form-input"><label>Защита от спама: введите сумму 2+2:</label><input id="form-capcha" type="number" required="" name="capcha" /></div>
+                                <div class="form-input form-pd"><label>Даю согласие на обработку <a href="#" target="_blank" rel="noopener noreferrer">персональных данных</a>:</label><input id="form-pd" type="checkbox" required="" name="pd" /></div>
+                                <input class="form-submit" type="submit" name="submit" value="Заказать сайт" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="message-form">
+                        <p>Загрузка...</p>
+                    </div>
+                </div>
 			</main><!-- .content -->
 		
 
 		<aside class="left-sidebar">
 			<div class="leftmenu">
-			<div class="left-title">Полезная информация:</div>
+			<div class="left-title close-toggle">Полезная информация</div>
 				<jdoc:include type="modules" name="left" style="xhtml"/>
 			</div>
-           
-            <div id="info">
-				<div id="beget"><p>Мы рекомендуем хостинг</p><a target="_blank" href="http://www.beget.ru/order?id=64352" ><img src="images/beget.png" alt="beget.ru" title="beget.ru"></a></div>
-			</div>
-            
-            <div class="bannerCalc">			
-				<a href="/kalculator-uslug">Рассчитайте стоимость сайта с помощью калькулятора услуг</a>
-			</div>
-        
-			<!-- VK Widget 
-			<div id="vk_groups"></div>
-			<script type="text/javascript">
-			VK.Widgets.Group("vk_groups", {mode: 0, width: "215", height: "200", color1: 'BDFFB5', color2: '2B587A', color3: '51D253'}, 110358948);
-			</script> -->
 			
 		</aside><!-- .left-sidebar -->
 
@@ -136,12 +144,6 @@ unset($this->_generator);
 		</div>
         
         <div class="metrika">
-		<!-- Yandex.Metrika informer
-<a href="http://metrika.yandex.ru/stat/?id=23785942&amp;from=informer"
-target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/23785942/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:23785942,lang:'ru'});return false}catch(e){}"/></a>
- /Yandex.Metrika informer -->
-
 <!-- Yandex.Metrika counter -->
 <script>
 (function (d, w, c) {
@@ -175,32 +177,12 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 
 </div><!-- .wrapper -->
 <div class="socbuttons">
-				<div class="vk">
-				<!-- noindex --><a rel="nofollow" target="_blank" href="https://vkontakte.ru/share.php?url=<?php echo($myurl)?>"></a><!--/ noindex -->
-				</div>
-				
-				<div class="twitter">
-				<!-- noindex --><a rel="nofollow" target="_blank" href="https://twitter.com/intent/tweet?text=Создать%20сайт:<?php echo($myurl);?>"></a><!--/ noindex -->
-				</div>
-				
-				<div class="facebook">
-				<!-- noindex --><a rel="nofollow" target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo($myurl);?>"></a><!--/ noindex -->
-				</div>
-				
-				<div class="mail">
-				<!-- noindex --><a rel="nofollow" target="_blank" href="https://connect.mail.ru/share?share_url=<?php echo($myurl);?>"></a><!--/ noindex -->
-				</div>
-				
-				<div class="google">
-				<!-- noindex --><a rel="nofollow" target="_blank" href="https://plus.google.com/share?url=<?php echo($myurl);?>"></a><!--/ noindex -->
-				</div>
-				
-				<div class="odnoclassniki">
-				<!-- noindex --><a rel="nofollow" target="_blank" href="https://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st.s=1&amp;st._surl=<?php echo($myurl);?>"></a><!--/ noindex -->
-				</div>
-			</div>
+    <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="//yastatic.net/share2/share.js"></script>
+    <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter"></div>
+</div>
 			
-			<div class="scroll">Наверх</div>
+<div class="scroll">Наверх</div>
 			
 </body>
 </html>

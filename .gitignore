@@ -4,5 +4,6 @@
 /administrator/cache/
 /cache/
 /logs/
+/calc/
 configuration.php
 .htaccess
