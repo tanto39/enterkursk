@@ -341,7 +341,7 @@ h1, h2, h3{padding: 20px 0 0; text-align: center; font-weight: normal;}
 	display: block;
 }
 .form-zakaz input{width:96%; padding: 0.8em;}
-.form-zakaz input, .form-zakaz textarea{border: 1px solid #90b990; outline: none;}
+.form-zakaz input, .form-zakaz textarea{border: 1px solid #90b990; outline: none; font-size: 0.8em;}
 .form-input{
 	margin: 0.5em 0;
 }
