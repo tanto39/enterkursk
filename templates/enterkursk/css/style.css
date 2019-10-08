@@ -16,6 +16,7 @@
 
 body {
 	font: 16px RobotoRegular, Arial, serif;
+	font-size: 2.5vh;
 	width: 100%;
 	color: #000000;
 }
@@ -29,9 +30,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .center-header, .footer-center{
 	width: 90%;
 	margin: 0 auto;
-}
-.wrapper {
-	font-size: 2.5vh;
 }
 
 /*-----jivo site-----*/
@@ -389,7 +387,7 @@ input#form-pd {
 
 /*------socbuttons------*/
 .socbuttons{position: fixed; display: block; right: 5px; top: 20%;}
-.socbuttons .ya-share2__container_size_m .ya-share2__icon{height: 48px; width: 48px;}
+.socbuttons .ya-share2__container_size_m .ya-share2__icon{height: 5vh; width: 5vh;}
 .socbuttons .ya-share2__item, .socbuttons .ya-share2__list_direction_horizontal > .ya-share2__item{display: block; margin-top: 5px;}
 
 /*-----services-----*/
