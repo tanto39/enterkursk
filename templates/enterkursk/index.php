@@ -6,7 +6,7 @@
  * @license    GNU GPL
  */
  defined('_JEXEC') or die('Restricted access');
-$mytitle = JFactory::getDocument()->getTitle();
+$doc = JFactory::getDocument();
 $myurl = JURI::current();
  ?>
  <?php $uri = preg_replace("/\?.*/i",'', $_SERVER['REQUEST_URI']);
