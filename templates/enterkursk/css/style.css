@@ -16,7 +16,7 @@
 
 body {
 	font: 16px RobotoRegular, Arial, serif;
-	font-size: 2.5vh;
+	font-size: 1.18vw;
 	width: 100%;
 	color: #000000;
 }
@@ -416,10 +416,7 @@ input#form-pd {width: 2em;cursor: pointer;}
 
 /*------------------Adaptation--------------------*/
 @media all and (max-width:1160px) {
-	.topmenu a{font-size: 0.9em;}
 	.logo-wrap {font-size: 2.5em;}
-	.service p {font-size: 0.9em;}
-	.service:hover .service-desc {height: 115vh;}
 	.leftmenu a{background: none; padding: 0.7em;}
 }
 @media all and (max-width:980px) {
@@ -436,9 +433,9 @@ input#form-pd {width: 2em;cursor: pointer;}
 		-webkit-flex-basis: 100%;
 		-ms-flex-preferred-size: 100%;
 	}
-	.service:hover .service-desc {height: 100vh;}
 }
 @media all and (max-width:768px) {
+	body{font-size:2.5vh;}
 	.service-wrap, .topmenu ul, .form-cat {
 		flex-direction: column;
 		-webkit-box-orient: vertical;
@@ -451,6 +448,7 @@ input#form-pd {width: 2em;cursor: pointer;}
 		-webkit-flex-basis: 93%;
 		-ms-flex-preferred-size: 93%;
 	}
+	.service:hover .service-desc {height: 110vh;}
 	.left-sidebar{padding:0;}
 	.service-block{height:auto;}
 	.topmenu ul, .footer-center{width: 90%;}
@@ -463,7 +461,6 @@ input#form-pd {width: 2em;cursor: pointer;}
 	.content h1, h2, h3 {margin: 0 15px;}
 	.content p, .form-zakaz, .content ul, .cat, .footer-center{padding: 15px;}
 	.service-wrap{padding: 0;}
-	.service:hover .service-desc {height: 90vh;}
 	.socbuttons {position: relative;}
 	.socbuttons .ya-share2__item, .socbuttons .ya-share2__list_direction_horizontal > .ya-share2__item {display: inline-block;}
 	.leftmenu ul{height: 0;}
@@ -476,6 +473,7 @@ input#form-pd {width: 2em;cursor: pointer;}
 	}
 	.radio-calc-wrap, .checkbox-calk-wrap, .num-calc-wrap, .summa, .message-form {width:80%;}
 	.form-zakaz input {width: 93%;}
+	.summa input[type="number"] {width: 40%;}
 }
 @media all and (min-width:1920px) {
 	.service-block{height: 60vh;}

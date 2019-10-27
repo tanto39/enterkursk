@@ -121,7 +121,7 @@ function scrollLeft(){
 	var fixLeft = $('.leftmenu');
 	var fixWidth = leftSidebar.width();
 	var heightToLeft = $('.header').height() + $('.topmenu').height();
-    var heightToFooter = $('.middle').height() - $('.footer').height() + 100;
+    var heightToFooter = $('.middle').height() - $('.footer').height() + 160;
 
 	if (($(window).scrollTop() > heightToLeft) && ($(window).scrollTop() < heightToFooter))
         fixLeft.css({'position':'fixed','top':'15px','bottom':'auto'}).css('width', fixWidth - 2);
