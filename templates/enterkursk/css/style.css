@@ -435,7 +435,7 @@ input#form-pd {width: 2em;cursor: pointer;}
 	}
 }
 @media all and (max-width:768px) {
-	body{font-size:2.5vh;}
+	body{font-size:16px;}
 	.service-wrap, .topmenu ul, .form-cat {
 		flex-direction: column;
 		-webkit-box-orient: vertical;
