@@ -1,7 +1,7 @@
 $(document).ready(function(){
 //калькулятор
-	$('.summa input').val('6900');
-	$('.summa input').attr("value", '6900');
+	$('.summa input').val('5900');
+	$('.summa input').attr("value", '5900');
 	
 	$('.calc input[type=checkbox]').click(function(){
 		
