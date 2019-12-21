@@ -206,6 +206,12 @@ p{
 }
 .form-input{padding: 0 0 1em 0;}
 .form-input input{border: 1px solid #9497b3;}
+.form-pd{text-align: left; padding: 0;}
+.form-pd label{
+	width: 94%;
+	float: left;
+	font-size: 0.9em;
+}
 .zakaz-send{width: 100%;}
 .zakaz{width: 50%}
 .zakaz input{
@@ -213,6 +219,10 @@ p{
     padding: 0.7em;
     font-size: 1.4em;
 	text-align: center;
+}
+.form-pd input{
+	width: 0.9em;
+	height: 0.9em;
 }
 .zakaz-send:hover, .zakaz-send:focus {border-color: #ffffff !important;}
 .message-form{display: none;}

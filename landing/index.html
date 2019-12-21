@@ -96,7 +96,8 @@
 				<div class="col-md-8 col-sm-8 text-center">
 				<form class="zakaz center-block" action="mail.php" method="POST">
 					<div class="form-input"><p><label for="name">Ваше имя:</label></p><input id="name" name="name" type="text" placeholder="Введите имя" required /></div>
-					<div class="form-input"><p><label for="phone">Ваш телефон:</label></p><input id="phone" name="phone" type="tel" placeholder="+7**********" required pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" /></div>	
+					<div class="form-input"><p><label for="phone">Ваш телефон:</label></p><input id="phone" name="phone" type="tel" placeholder="+7**********" required pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" /></div>
+					<div class="form-input form-pd"><label>Даю согласие на обработку <a href="/pd.docx" target="_blank" rel="noopener noreferrer">персональных данных</a>:</label><input id="form-pd" type="checkbox" required="" name="pd"></div>
 					<input class="zakaz-send" type="submit" name="submit" value="Заказать сайт, мяу" />
 					<div class="message-form"><p>Загрузка...</p></div>
 				</form>
