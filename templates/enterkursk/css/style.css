@@ -369,7 +369,7 @@ input#form-pd {width: 2em;cursor: pointer;}
 }
 
 /*------socbuttons------*/
-.socbuttons{position: fixed; display: block; right: 5px; top: 20%;}
+.socbuttons{position: fixed; display: block; right: 5px; top: 17%;}
 .socbuttons .ya-share2__container_size_m .ya-share2__icon{height: 7vh; width: 7vh;}
 .socbuttons .ya-share2__item, .socbuttons .ya-share2__list_direction_horizontal > .ya-share2__item{display: block; margin-top: 5px;}
 

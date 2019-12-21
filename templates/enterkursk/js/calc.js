@@ -43,7 +43,7 @@ $(document).ready(function(){
 	var i;
 	var numarr = $('.num-calc-wrap input')
 	var numval = 0;
-	var numprice=[150,500, 100, 50, 50];
+	var numprice=[250,500, 200, 50, 50];
 	$('.num-calc-wrap input').change(function(){
 		var valNum = $(this).val()
 		
