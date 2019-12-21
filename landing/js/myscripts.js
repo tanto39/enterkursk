@@ -1,21 +1,13 @@
 //высота экранов
 $(document).ready(function(){
-	//var heighttop = $('.topmenu').height();
-	//$('header').height(0.87*$(window).height());
-	//$('section').height($(window).height()-$('.topmenu').height());
-	//$('footer').height($(window).height()-$('.topmenu').height()-20);
-	
 	$('.shift').css({left: $(window).width()});//начальная позиция элемента сдвигаемого при скролле
-	//$('h2').css({height: 0.13*$(window).height(), 'line-height': 0.13*$(window).height()+"px"});//адаптивная высота заголовков
-	
 	$('.opacity').css({opacity: 0});//начальная прозрачность у плавно появляющихся элементов
 	
 //скролл до якоря
 $('.topmenu a, .zakaz-button').click(function(event){
 	event.preventDefault();
 	var href = $(this).attr('href');
-	var scrollTo = $(href).offset().top-$('.topmenu').height() + 1;
-	//alert(href);
+	var scrollTo = $(href).offset().top-$('.topmenu li').height() + 1;
 	$('html, body').animate({scrollTop: scrollTo}, 1000);
 });
 
