@@ -143,6 +143,7 @@ p{
 	margin: 0 0 0.5em;
 	line-height: 1.6;
 }
+#forma img, #shema img, .blocks img{width:80%;}
 
 /*sect1*/
 .sect1{background: url(../images/separate.png) 50% 97% no-repeat;}
@@ -242,13 +243,9 @@ p{
 .map div{margin: 100px 0;}
 .map>ymaps, .map>ymaps>ymaps{width: 100% !important; margin: 0 auto;}
 /*----adaptation------*/
-
 @media all and (min-width:1920px) {
 	.header {
 		background-size: cover; /* Масштабируем фон */
-	}
-	section .row {
-		padding: 150px 0;
 	}
 }
 @media all and (max-width:991px) {
