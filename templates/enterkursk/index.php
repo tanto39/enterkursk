@@ -97,7 +97,7 @@ unset($this->_generator);
 	<div class="middle flex">
 
 		
-			<main class="content">
+			<div class="content">
 			<jdoc:include type="component" />
 
                 <div class="form-wrap">
@@ -122,7 +122,7 @@ unset($this->_generator);
                         <p>Загрузка...</p>
                     </div>
                 </div>
-			</main><!-- .content -->
+			</div><!-- .content -->
 		
 
 		<aside class="left-sidebar">

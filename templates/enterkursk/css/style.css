@@ -210,7 +210,7 @@ h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .
 .content {font-size: 1.1em;}
 .content a {color: #2f334a;}
 .bottom-content{height: 60px;}
-.content p{padding: 20px 80px;}
+.content p{padding: 0.7em 4em;}
 .content ul{padding: 10px 80px;}
 .content li{
 	padding: 10px 0 10px 30px;
