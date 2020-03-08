@@ -5,13 +5,10 @@ $(document).ready(function(){
 	}
 	
 	//портфолио ссылки
-	$(".portfolio").each(function(){
-		var href = $(this).attr("data-href");
-		var links = $(this).find("a");
-		
-		links.each(function(){
-			$(this).attr("href", href);
-		})
+	$(".portfolio a").click(function(e){
+		e.preventDefault();
+		var href = $(this).closest(".portfolio").attr("data-href");
+		window.open(href, '_blank');
 	});
 	
 });	

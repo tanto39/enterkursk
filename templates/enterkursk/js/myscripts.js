@@ -135,6 +135,10 @@ function scrollLeft(){
 
 //ссылка на  соглашение
 $(".form-pd a").attr("href", "pd.docx");
+$(".form-pd a").click(function(e) {
+	e.preventDefault();
+	window.open('pd.docx', '_blank');
+});
 
 // chat
 (function () {
