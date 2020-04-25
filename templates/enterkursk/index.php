@@ -39,7 +39,6 @@ unset($this->_generator);
 
 <jdoc:include type="head" />
   <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/style.css"/>
-  <script defer src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery-3.1.1.min.js"></script>
   <script defer src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/myscripts.js"></script>
   
   <!--[if IE]>
