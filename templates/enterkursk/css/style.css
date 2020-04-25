@@ -69,20 +69,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	align-items: flex-start;
 }
 
-.content, .form-zakaz{
+.content{
 	flex-basis: 75%;
 	-webkit-flex-basis: 75%;
 	-ms-flex-preferred-size: 75%;
+}
+.form-zakaz{
+	flex-basis: 75%;
+	-webkit-flex-basis: 75%;
+	-ms-flex-preferred-size: 68%;
 }
 .service {
 	flex-basis: 50%;
 	-webkit-flex-basis: 50%;
 	-ms-flex-preferred-size: 50%;
 }
-.left-sidebar, .cat{
+.left-sidebar{
 	flex-basis: 25%;
 	-webkit-flex-basis: 25%;
 	-ms-flex-preferred-size: 25%;
+}
+.cat{
+	flex-basis: 25%;
+	-webkit-flex-basis: 25%;
+	-ms-flex-preferred-size: 35%;
 }
 
 /*---------menu----------*/
