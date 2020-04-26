@@ -459,7 +459,7 @@ input#form-pd {width: 2em;cursor: pointer;}
 		-webkit-flex-basis: 93%;
 		-ms-flex-preferred-size: 93%;
 	}
-	.service:hover .service-desc {height: 110vh;}
+	.service:hover .service-desc {height: 120vh;}
 	.left-sidebar{padding:0;}
 	.service-block{height:auto;}
 	.topmenu ul, .footer-center{width: 90%;}
