@@ -36,7 +36,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .wrap_3s{margin: 5% 3% !important;}
 
 /*------flex-------*/
-.flex, .topmenu ul, .radio-calc-wrap div, .checkbox-calk-wrap div, .num-calc-wrap div, .service-wrap{
+.flex, .topmenu ul, .radio-calc-wrap div, .checkbox-calk-wrap div, .num-calc-wrap div, .service-wrap, .form-pd{
 	display: -webkit-flex;
 	display: -webkit-box;
 	display: -moz-flex;
@@ -49,6 +49,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	-webkit-box-align: stretch;
 	-webkit-align-items: stretch;
 	-ms-flex-align: stretch;
+}
+.form-pd{
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
 }
 .content{
 	order: 1;
@@ -360,7 +366,7 @@ h1, h2, h3{padding: 1em 0 0; text-align: center; font-weight: normal;}
 	color: #ffffff;
 }
 .form-submit:hover{background: #597e9e;color: #ffffff;}
-.form-pd {margin-top: 20px;}
+.form-pd {margin-top: 1em;}
 input#form-pd {width: 2em;cursor: pointer;}
 .form-pd label {font-size: 0.8em;}
 .message-form{display: none; text-align: center;}
