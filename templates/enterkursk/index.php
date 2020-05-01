@@ -98,6 +98,12 @@ unset($this->_generator);
 		
 			<div class="content">
 			<jdoc:include type="component" />
+			
+			    <div class="video boxcontent">
+			        <h3 class="doptitle">Видео</h3>
+			        <p>Посмотрите небольшой видеоролик, в котором в общих чертах рассказано об основных этапах задания, разработки и продвижения, а также показан пример типового сайта-каталога.</p>
+			        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zdl6EQh816Y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			    </div>
 
                 <div class="form-wrap">
                 <h3 class="center-title form-title">Форма заказа</h3>

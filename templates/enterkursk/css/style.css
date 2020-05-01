@@ -234,6 +234,8 @@ h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .
 }
 .boxcontent{padding: 0 0 1.5em 0; background: #f4f4f7;}
 h1{font-size: 1.5em;text-transform: uppercase;}
+.item-page{padding-bottom:1em;}
+.video iframe{display: block; margin:1em auto; width: 40em;height: 27em;}
 
 /*-- portfolio --*/
 .portfolio{
@@ -481,7 +483,8 @@ input#form-pd {width: 2em;cursor: pointer;}
 	.socbuttons {position: relative;}
 	.socbuttons .ya-share2__item, .socbuttons .ya-share2__list_direction_horizontal > .ya-share2__item {display: inline-block;}
 	.leftmenu ul{height: 0;}
-	.portfolio {width: 95%;}
+	.portfolio, .video iframe {width: 95%;}
+	.video iframe {height:15em;}
 	.portfolio img {width: 100%;}
 	.portfolio div {width: 90%;}
 	.calc-subtitle{
