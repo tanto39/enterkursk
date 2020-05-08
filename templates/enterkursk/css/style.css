@@ -235,7 +235,7 @@ h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .
 .boxcontent{padding: 0 0 1.5em 0; background: #f4f4f7;}
 h1{font-size: 1.5em;text-transform: uppercase;}
 .item-page{padding-bottom:1em;}
-.video iframe{display: block; margin:1em auto; width: 40em;height: 27em;}
+.video iframe{display: block; margin:1em auto; width: 40em;height: 27em;border: 0.5em solid #a2b2d8;}
 
 /*-- portfolio --*/
 .portfolio{
