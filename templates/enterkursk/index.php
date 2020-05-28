@@ -70,21 +70,21 @@ unset($this->_generator);
 
             <div class="top-box">
 				<?php if ($uri != "/protsess-sozdaniya-sajta"):?>
-					<a class="top-box1" href="/protsess-sozdaniya-sajta"><span>Создание сайта</span></a>
+					<a class="top-box1" href="/protsess-sozdaniya-sajta"><span>Разработка сайта</span></a>
 				<?php else:?>
-					<a class="top-box1" href="#"><span>Создание сайта</span></a>
+					<a class="top-box1" href="#"><span>Разработка сайта</span></a>
 				<?php endif;?>	
 				
 				<?php if ($uri != "/chto-takoe-seo"):?>
 					<a class="top-box2" href="/chto-takoe-seo"><span>Продвижение сайта</span></a>
 				<?php else:?>
-					<a class="top-box2" href="#"><span>Продвижение сайта</span></a>
+					<a class="top-box2" href="#"><span>Продвижение</span></a>
 				<?php endif;?>
 				
 				<?php if ($uri != "/svyazhites-s-nami"):?>
-					<a class="top-box3" href="/svyazhites-s-nami"><span>Прибыль</span></a>
+					<a class="top-box3" href="/svyazhites-s-nami"><span>Рост вашей прибыли</span></a>
 				<?php else:?>
-					<a class="top-box3" href="#"><span>Прибыль</span></a>
+					<a class="top-box3" href="#"><span>Рост вашей прибыли</span></a>
 				<?php endif;?>
             </div>
             

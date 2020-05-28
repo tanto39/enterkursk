@@ -37,7 +37,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .wrap_3s{margin: 5% 3% !important;}
 
 /*------flex-------*/
-.flex, .topmenu ul, .radio-calc-wrap div, .checkbox-calk-wrap div, .num-calc-wrap div, .service-wrap, .form-pd{
+.flex, .topmenu ul, .radio-calc-wrap div, .checkbox-calk-wrap div, .num-calc-wrap div, .service-wrap, .form-pd, .top-box, .top-box a{
 	display: -webkit-flex;
 	display: -webkit-box;
 	display: -moz-flex;
@@ -69,14 +69,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	-webkit-order: 0;
 	-ms-flex-order: 0;
 }
-.service-wrap{
-	-webkit-box-align: start;
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	align-items: flex-start;
+.top-box a{
+	-webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.header-right, .search-form form{
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+.top-box, .top-box a{
+	justify-content: space-around;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
 }
 
-.content{
+.content , .top-box{
 	flex-basis: 75%;
 	-webkit-flex-basis: 75%;
 	-ms-flex-preferred-size: 75%;
@@ -165,44 +177,48 @@ h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .
 .leftmenu, .content, .boxcontent{background: #dfdfff;}
 .center-header{position: relative;}
 .top-box{
-	width: 727px;
-	height: 220px;
+	width: 80%;
 	margin: 0 auto;
 	top: 15px;
 	position: relative;
 }
 .top-box a{
-	display: block;
-	position: relative;
 	background: url(../images/topbox.jpg) top left no-repeat;
-	float: left;
-	width: 200px;
-	height: 200px;
-	margin: 6px;
+	background-size: 300%;
+	width: 17em;
+	height: 17em;
 	-moz-transition: -moz-transform 0.5s ease-in-out;
 	-webkit-transition: -webkit-transform 0.5s ease-in-out;
 	-o-transition: -o-transform 0.5s ease-in-out;
 	-ms-transition: -ms-transform 0.5s ease-in-out;
 	transition: transform 0.5s ease-in-out;
-	-webkit-border-radius: 105px;
-	-moz-border-radius: 105px;
-	border-radius: 115px;
-	border: 15px solid #5b6e9a
+	border-radius: 17em;
+	border: 1em solid #5b6e9a;
+	text-decoration: none;
+	color: #3d437b;
 }
-.top-box a span{display: none;}
+.top-box a span{
+	font-size: 1.6em;
+    padding: 0 0 0.9em;
+    font-weight: bold;
+    line-height: 1.1em;
+    width: 7em;
+    text-align: center;
+}
 .top-box a:hover{
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
 	-ms-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
 	transform: rotate(360deg);
-	border: 15px solid #7d89ff;
+	border: 1em solid #7d89ff;
+	color: #4a658c;
 }
-.top-box a.top-box2{background-position: -200px 0px;}
-.top-box a.top-box3{background-position: -400px 0px;}
-.top-box a.top-box1:hover{background-position: 0px -200px;}
-.top-box a.top-box2:hover{background-position: -200px -200px;}
-.top-box a.top-box3:hover{background-position: -400px -200px;}
+.top-box a.top-box2{background-position: 50% 0; color:#ff5d0f;}
+.top-box a.top-box3{background-position: 100% 0; color:#856704;}
+.top-box a.top-box1:hover{background-position: 0 100%;}
+.top-box a.top-box2:hover{background-position: 50% 100%; color:#3993ef;}
+.top-box a.top-box3:hover{background-position: 100% 100%; color:#7e5a32;}
 .logo{
 	width: 45%;
 	margin: 55px auto 0;
