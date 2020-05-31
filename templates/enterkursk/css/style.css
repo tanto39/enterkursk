@@ -75,6 +75,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     -ms-flex-align: end;
     align-items: flex-end;
 }
+.service-wrap{
+	-webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
 .header-right, .search-form form{
     justify-content: flex-end;
     -webkit-box-pack: end;
@@ -193,7 +199,7 @@ h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .
 	-ms-transition: -ms-transform 0.5s ease-in-out;
 	transition: transform 0.5s ease-in-out;
 	border-radius: 17em;
-	border: 1em solid #5b6e9a;
+	border: 20px solid #5b6e9a;
 	text-decoration: none;
 	color: #3d437b;
 }
@@ -204,6 +210,7 @@ h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .
     line-height: 1.1em;
     width: 7em;
     text-align: center;
+	margin: 0 auto;
 }
 .top-box a:hover{
 	-webkit-transform: rotate(360deg);
@@ -211,7 +218,7 @@ h1, h2, h3, .leftmenu a, #beget, .portfolio p, .left-title, .calc-description, .
 	-ms-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
 	transform: rotate(360deg);
-	border: 1em solid #7d89ff;
+	border: 20px solid #7d89ff;
 	color: #4a658c;
 }
 .top-box a.top-box2{background-position: 50% 0; color:#ff5d0f;}

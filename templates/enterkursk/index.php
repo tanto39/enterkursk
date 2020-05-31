@@ -78,7 +78,7 @@ unset($this->_generator);
 				<?php if ($uri != "/chto-takoe-seo"):?>
 					<a class="top-box2" href="/chto-takoe-seo"><span>Продвижение сайта</span></a>
 				<?php else:?>
-					<a class="top-box2" href="#"><span>Продвижение</span></a>
+					<a class="top-box2" href="#"><span>Продвижение сайта</span></a>
 				<?php endif;?>
 				
 				<?php if ($uri != "/svyazhites-s-nami"):?>
